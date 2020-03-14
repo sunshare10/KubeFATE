@@ -21,7 +21,7 @@ KubeFATE2
 
 `k8s-deploy`: The k8s deployment is design for a real production deployed and managed environment. It designed for flexibility to suit different various environments.
 
-### Major features of new KubeFATE k8s-deploy
+### Major features of KubeFATE k8s-deploy
   * Provide a single executable binary for initialing and managing FATE cluster
   * Full cycle FATE cluster management, includes deploying a new FATE cluster, querying existed FATE cluster, destroying a given FATE cluster and etc.
   * Support customized deployment
@@ -33,6 +33,13 @@ For more details, please refer to [Kubernetes Deployment](./k8s-deploy/README.md
 ## Build KubeFATE
 ##### To use docker-deploy for docker compose deployment, you need to make sure [Docker Compose] installed
 Refer to: [Docker Compose Deployment](./docker-deploy/README.md) for more details
+
+To package the docker-deploy, which is a zip of scripts to quick deploy FATE,
+```
+git clone https://github.com/FederatedAI/KubeFATE.git
+cd KubeFATE
+make zip
+```
 
 ##### To build KubeFATE binary, you need a [Go environment] 
 
